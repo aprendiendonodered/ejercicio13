@@ -1,1 +1,471 @@
-[]
+[
+    {
+        "id": "5602856e.7a8a6c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b2d5cfb6.3a738",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "enriquecrespo.com",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "usetls": true,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "5e9b7c18.370ee4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7df85207.13b4cc",
+        "type": "ui_group",
+        "name": "Baja Res",
+        "tab": "5e9b7c18.370ee4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e21adcff.dad6a",
+        "type": "ui_group",
+        "name": "Alta Res",
+        "tab": "5e9b7c18.370ee4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ee1ece66.710ba",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2dcd8bca.bc7514",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    },
+    {
+        "id": "f1685874.083f48",
+        "type": "mqtt out",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "topic": "cursocefire/tomafotomqtt",
+        "qos": "",
+        "retain": "",
+        "broker": "b2d5cfb6.3a738",
+        "x": 540,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4a3bb78f.198218",
+        "type": "mqtt out",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "topic": "cursocefire/tomafotoweb",
+        "qos": "",
+        "retain": "",
+        "broker": "b2d5cfb6.3a738",
+        "x": 530,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "1a2f2298.7faf4d",
+        "type": "ui_button",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "group": "7df85207.13b4cc",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button baja resolucion",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "f1685874.083f48"
+            ]
+        ]
+    },
+    {
+        "id": "3504b61a.28992a",
+        "type": "ui_button",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "group": "e21adcff.dad6a",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button alta resolución",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "",
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "4a3bb78f.198218",
+                "80669d65.49f41"
+            ]
+        ]
+    },
+    {
+        "id": "34e3132b.41c0fc",
+        "type": "ui_media",
+        "z": "5602856e.7a8a6c",
+        "group": "7df85207.13b4cc",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 630,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ab25a86.76bae8",
+        "type": "ui_media",
+        "z": "5602856e.7a8a6c",
+        "group": "e21adcff.dad6a",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 1,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 730,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ea55cee.ba2e54",
+        "type": "image",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 420,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c4cda4f9.aa7258",
+        "type": "mqtt in",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "topic": "cursocefire/foto",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "b2d5cfb6.3a738",
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "6ea55cee.ba2e54",
+                "de171370.64187"
+            ]
+        ]
+    },
+    {
+        "id": "de171370.64187",
+        "type": "change",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/jpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "34e3132b.41c0fc"
+            ]
+        ]
+    },
+    {
+        "id": "c9756ae2.787008",
+        "type": "http request",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "https://www.aprendiendoarduino.com/servicios/imagen.jpg",
+        "tls": "2dcd8bca.bc7514",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 310,
+        "y": 480,
+        "wires": [
+            [
+                "63cefec0.cdbdd",
+                "29f5ecb1.768bc4"
+            ]
+        ]
+    },
+    {
+        "id": "63cefec0.cdbdd",
+        "type": "change",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/jpeg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 480,
+        "wires": [
+            [
+                "9ab25a86.76bae8"
+            ]
+        ]
+    },
+    {
+        "id": "29f5ecb1.768bc4",
+        "type": "image",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 520,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5671a78e.58c6d8",
+        "type": "inject",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "c9756ae2.787008"
+            ]
+        ]
+    },
+    {
+        "id": "80669d65.49f41",
+        "type": "delay",
+        "z": "5602856e.7a8a6c",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "c9756ae2.787008"
+            ]
+        ]
+    }
+]
